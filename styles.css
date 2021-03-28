@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+#app{
+    margin: 0;
+}
+html,body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    top: 0;
+}
+
+
+.titulo{
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+}
+
+.titulo h1{
+    position: absolute;
+    font-size: 60px;
+    margin: 0;
+    top: 50%;
+    left: 50%;                         /* 3 */
+    transform: translate(-50%, -50%);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px; /* largura da borda */
+    -webkit-text-stroke-color: #F7DE06; /* cor da borda */
+    /* identical to box height */
+
+    text-transform: uppercase;
+}
+.opcoes{
+    display: grid;
+    width: 50vw;
+    justify-self: center;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "contador contador contador"
+    "botao botao botao";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 50%;
+    position: relative;
+    left: 50%;                         /* 3 */
+    transform: translate(-50%, 0);
+
+}
+
+.opcoes p{
+    font-family: Roboto;
+    font-weight: 400 !important;
+    text-align: center;
+    font-size: 40px;
+    margin:0;
+    grid-area: titulo;
+}
+
+.opcoes button:nth-child(1){
+    grid-area: botao;
+}
+
+.opcoes h2{
+    grid-area: contador;
+    justify-self: center;
+}
