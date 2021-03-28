@@ -9,7 +9,7 @@ function Titulo() {
 
     return (
         <div class="titulo">
-            <h1>Escolha a seu lado da força</h1>
+            <h1>Escolha o seu lado da força</h1>
         </div>
     );
 
